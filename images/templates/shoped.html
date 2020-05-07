@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/pos.css">
+</head>
+<body>
+    <nav class="bar">
+        <div class="bar-center">
+            <div class="bar-btn">
+                <span class="bar-iconed" onclick="myFunctions()" style="padding-right:15px;">
+                    <i class="fas fa-home"></i>
+                </span>
+                
+                <span class="bar-icondo"style="padding-right:15px;">
+                    <i class="fas fa-comment-dots"></i>
+                </span>
+                <span class="bar-icon" onclick="funked()"style="padding-right:15px;">
+                    <i class="fas fa-power-off"></i>
+                </span>
+            </div>
+            
+            <img class="bar-img" src="../static/images/coffee.svg" alt="store logo">
+            <div class="basket-btn">
+                <span class="bar-icon">
+                    <i class="fas fa-shopping-basket"></i>
+                </span>
+                <div class="basket-items">0</div>
+            </div>
+        </div>
+    </nav>
+    <section class="products">
+        
+        <div class="section-title">
+            <h2>Coffees And Cookies</h2>
+        </div>
+        <br>
+        <br>
+        
+        <hr style="border: 2px solid #003049 ;width:75%;">
+        <br>
+        <br>
+        <div class="products-center">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr style="border: 2px solid #003049 ;width:75%;">
+        <div class="section-title">
+            <h2></h2>
+        </div>
+        <div class="kuki-center">
+        </div>
+    </section> 
+    <div class="cart-overlay">
+        <div class="cart">
+            <span class="close-cart">
+                <i class="fas fa-window-close"></i>
+            </span>
+            <h2>your cart</h2>
+            <hr style="border: 2px solid  rgb(188, 226, 224) ;width:70%;border-radius:2px;">
+            <div class="cart-content">
+            </div>
+            <div class="cart-footer">
+                <h3>Your Total : $ <span class="cart-total">0</span></h3>
+                <button class="clear-cart banner-btn">Buy</button>
+            </div>
+            
+        </div>
+        
+    </div> 
+    <script>   
+        function myFunctions(){
+            window.location.href = "aboutedpage";
+        }
+        function funked(){
+            window.location.href = "/";
+        }
+    </script>
+    <script src="../static/code.js"></script>
+    
+</body>
+</html>
